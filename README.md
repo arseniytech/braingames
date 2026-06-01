@@ -1,53 +1,128 @@
-### Hexlet tests and linter status:
 [![Actions Status](https://github.com/yeat2007/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/yeat2007/frontend-project-44/actions)
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/ecd27fab3a02e57a369b/maintainability)](https://codeclimate.com/github/yeat2007/frontend-project-44/maintainability)
 
-# Mind Games 2025
+# 🧠 Brain Games 2025
 
-*Here you can enjoy 5 games which you need to complete using your brain*
+A collection of 5 interactive CLI-based games designed to exercise your problem-solving and mathematical thinking skills. Each game presents unique challenges that require quick thinking and logical reasoning.
 
+## 🎮 Available Games
 
-## ***Let's start***
+### 1. **Brain Even** — Parity Check
+Determine if a number is even or odd.
+- **Launch:** `make brain-even`
+- **Skills:** Number theory, binary thinking
 
-### "Brain even" 
-This game about parity, you can launch it by `make brain-even`
+### 2. **Brain Calc** — Quick Calculations
+Solve simple arithmetic problems (addition, subtraction, multiplication).
+- **Launch:** `make brain-calc`
+- **Skills:** Mental math, operator precedence
 
-![](https://github.com/user-attachments/assets/94fc8d66-c06a-48eb-9bc0-58c7a3dd9c0d)
-![](https://github.com/user-attachments/assets/ac96c945-de69-404c-910c-b1aedfc68ee0)
+### 3. **Brain GCD** — Greatest Common Divisor
+Find the GCD of two numbers.
+- **Launch:** `make brain-gcd`
+- **Skills:** Number theory, Euclidean algorithm
 
+### 4. **Brain Prime** — Prime Number Detector
+Identify if a number is prime or composite.
+- **Launch:** `make brain-prime`
+- **Skills:** Prime numbers, divisibility
 
-### "Brain calc"
-The game here about calculator mechanism, you can launch it by `make brain-calc`
+### 5. **Brain Progression** — Arithmetic Sequences
+Find the missing number in an arithmetic progression.
+- **Launch:** `make brain-progression`
+- **Skills:** Sequences, pattern recognition
 
-![](https://github.com/user-attachments/assets/8c464b65-47f4-46a0-b1ef-5a92c90da526)
-![](https://github.com/user-attachments/assets/16d8e14b-c0a4-43a1-a203-ed6fe1df37d0)
+## 🛠 Tech Stack
 
+- **Language:** JavaScript
+- **Runtime:** Node.js
+- **Build Tool:** Make
+- **Testing:** Hexlet Tests
+- **Linting:** Code quality checks with CodeClimate
 
-### "Brain GCD"
-Here you need to find the Greatest Common Divisor, you can launch it by `make brain-gcd`
+## 📋 Requirements
 
-![](https://github.com/user-attachments/assets/b8b06320-3dcf-4355-95b3-8a5ea98c00da)
-![](https://github.com/user-attachments/assets/6ecd33f1-db60-422e-86c4-521a4cd0b270)
+- Node.js 14+
+- Make (for running games)
+- npm or yarn
 
+## 🚀 Installation
 
-### "Brain prime"
-In this game you need to find prime number, you can launch it by `make brain-prime`
+```bash
+git clone https://github.com/arseniytech/braingames.git
+cd braingames
+npm install
+```
 
+## ▶️ How to Play
 
-![](https://github.com/user-attachments/assets/575bea3a-edfa-4bf2-8b0d-e4060a3f2279)
-![](https://github.com/user-attachments/assets/5e63ea23-2822-400a-9992-c57df7ab8413)
+1. **Run a game** using the Make command above
+2. **Answer questions** — you have multiple attempts (3 correct answers to win)
+3. **Get feedback** — see if your answer is correct or incorrect
+4. **Complete the series** — solve 3 questions in a row to win the game
 
+## 📊 Game Statistics
 
+- **Total Games:** 5
+- **Difficulty Level:** Medium
+- **Questions per Game:** 3 correct answers to win
+- **Time per Game:** ~2-5 minutes
 
+## 🏗 Project Structure
 
-### "Brain progression"
-This game about arithmetic progression, you can launch it by `make brain-progression`
+```
+braingames/
+├── bin/
+│   ├── brain-even.js       # Even number game
+│   ├── brain-calc.js       # Calculation game
+│   ├── brain-gcd.js        # GCD game
+│   ├── brain-prime.js      # Prime number game
+│   └── brain-progression.js # Progression game
+├── src/
+│   ├── games/              # Game logic modules
+│   └── utils/              # Utility functions
+├── Makefile                # Game launch commands
+└── package.json            # Dependencies
+```
 
-![](https://github.com/user-attachments/assets/cb61c700-0311-443c-835e-f8ad5b7ef8ee)
-![](https://github.com/user-attachments/assets/f7420a45-8637-4c73-b7ba-fe3f64d0ef92)
+## 💡 Learning Outcomes
 
+Through this project, I practiced:
+- ✅ JavaScript fundamentals and logic
+- ✅ CLI application development
+- ✅ Game loop design and user interaction
+- ✅ Code organization and modularity
+- ✅ Testing with Hexlet framework
 
+## 🎯 Game Examples
 
+```bash
+$ make brain-even
+Welcome to Brain Games!
+What is the result of 42 + 15?
+Your answer: 57
+Correct!
 
-<img src ="https://png.pngtree.com/background/20230611/original/pngtree-picture-of-a-blue-bird-on-a-black-background-picture-image_3124189.jpg" width="600" height="200" />
+What is the result of 72 - 28?
+Your answer: 44
+Correct!
+
+What is the result of 12 * 6?
+Your answer: 72
+Correct!
+
+Congratulations, User!
+```
+
+## 📝 Notes
+
+- Games are designed for learning and practice
+- Suitable for warm-up coding exercises
+- Good introduction to algorithm implementation
+- Foundation for more complex game development
+
+---
+
+**Author:** Arseniy  
+**Status:** ✅ Complete | **CI/CD:** Passing  
+**Play it:** `make brain-even` to get started!
